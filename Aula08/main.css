@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    font-family: "Kanit", sans-serif;
+    color: #1e1e1e;
+}
+
+header {
+    background-color: #0a4291;
+    color: white;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 80px;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    transition: 0.1s ease;
+    transition-delay: 0.25s;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    color: var(--clr, #1af7ff);
+    overflow: hidden;
+    border-right: 6px solid var(--clr, #1af7ff); 
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0 0 40px var(--clr, #1af7ff)); 
+}
+
+h1:hover::before {
+    width: 100%;
+}
+
+h1:hover {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+}
+
+.container img {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 300px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: "kanit", sans-serif;
+    font-weight: none;
+    margin-left: 16px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+    text-align: center;
+}
+
+.articles article {
+    width: 30%; 
+    margin-bottom: 16px;
+}
+
+.articles article img {
+    height: 250px; 
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    font-size: 20px;
+    background-color: #0a4291;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: "kanit", sans-serif;
+    font-size: 20px;
+}
+
+
+.articles article h3 {
+    font-size: 25px;
+}
+
+section h2 {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    padding: 16px;
+}
+
+#sports {
+    background-color: rgba(10, 255, 10, 0.42);
+}
+
+#sports .articles article a {
+    background-color: rgb(38, 100, 38);
+}
+
+#sports time {
+    background-color: rgb(38, 100, 38);
+    color: white;
+    border-radius: 8px;
+    border-width: 20px;
+    font-size: 20px;
+}
+
+#economy {
+    background-color: rgba(150, 300, 0, 0.42);
+}
+
+#economy .articles article a {
+    background-color: chartreuse;
+    color: black;
+}
+
+#entertainment {
+    background-color: rgba(600, 80, 0, 0.30);
+}
+
+#entertainment .articles article a {
+    background-color: chocolate;
+}
+
+#entertainment time {
+    background-color: chocolate;
+    color: white;
+    border-radius: 8px;
+    border-width: 20px;
+    font-size: 20px;
+}
+
+#economy time {
+    background-color: rgb(162, 255, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border-width: 20px;
+    font-size: 20px;
+}
+
+#tec {
+    background-color: rgba(0, 0, 255, 0.30);
+}
+
+#tec .articles article a {
+    background-color: #0a4291;
+}
+
+#tec time {
+    background-color: #0a4291;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-width: 20px;
+    font-size: 20px;
+}
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: aut o;
+    border: 8px;
+    font-weight: bold;
+    margin: 20px;
+}
