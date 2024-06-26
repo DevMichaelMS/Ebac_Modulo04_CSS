@@ -176,3 +176,12 @@ section {
     border-width: 20px;
     font-size: 20px;
 }
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: aut o;
+    border: 8px;
+    font-weight: bold;
+    margin: 20px;
+}
